@@ -5,6 +5,7 @@ html {
   font-family: Arvo, sefif;
   color: $primary_font_color;
 }
+
 body {
   background-color: $main_bg_color;
 }
@@ -12,7 +13,6 @@ body {
 .mainNav {
   background-color: $nav_bg_color;
   text-align: center;
-
 
   ul {
     margin-top: 0;
@@ -36,13 +36,34 @@ body {
     font-size: 1.1em;
     font-weight: normal;
     padding-bottom: 1em;
-    padding-top:0;
+    padding-top: 0;
     margin-top: 0;
   }
 }
 
+.mainContentContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: $content_bg_color;
+  padding: 5em 2em 1.7em 2em;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 
+  .content {
+    flex: 1 1 75%;
+    order: 2;
+    background-color: yellow;
+    min-height: 500px;
+  }
 
+  .sibebar {
+    flex: 0 0 25%;
+    order: 1;
+    background-color: green;
+    min-height: 500px;
+  }
+}
 
 .mainFooter {
   text-align: center;
@@ -59,7 +80,6 @@ body {
     }
   }
 }
-
 
 .button {
   @include button;
