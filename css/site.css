@@ -32,20 +32,71 @@ body {
   display: flex;
   flex-flow: row nowrap;
   background-color: #fff;
-  padding: 5em 2em 1.7em 2em;
+  padding: 1em 2em 1.7em 2em;
   width: 1200px;
   margin-left: auto;
   margin-right: auto; }
   .mainContentContainer .content {
+    padding-left: 1em;
+    box-sizing: border-box;
     flex: 1 1 75%;
-    order: 2;
-    background-color: yellow;
-    min-height: 500px; }
+    order: 2; }
   .mainContentContainer .sibebar {
+    font-size: 0.9em;
+    box-sizing: border-box;
+    margin-top: 2em;
+    padding: 0 2em;
     flex: 0 0 25%;
-    order: 1;
-    background-color: green;
-    min-height: 500px; }
+    order: 1; }
+
+.post {
+  border-bottom: 1px solid #adadad;
+  padding: 2em 0.2em 3em 0.2em;
+  font-size: 0.9em; }
+  .post a {
+    color: #E42E33;
+    text-decoration: none; }
+    .post a:hover {
+      text-decoration: underline; }
+  .post h2 {
+    font-size: 2.2em;
+    color: #E42E33;
+    margin-bottom: 0.2em;
+    font-weight: normal; }
+  .post h3 {
+    font-size: 0.8em;
+    margin-top: 0;
+    font-weight: normal; }
+  .post img {
+    width: 100%; }
+
+.navSection {
+  padding-top: 2em; }
+  .navSection h2 {
+    color: #E42E33;
+    font-size: 1.6em;
+    font-weight: normal;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #adadad;
+    margin-bottom: 1.5em;
+    margin-top: 0; }
+  .navSection p {
+    line-height: 2; }
+  .navSection ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left; }
+  .navSection li {
+    padding-left: 1em;
+    margin-left: 0;
+    margin-bottom: 1em;
+    background: url("../img/img07.jpg") left center no-repeat; }
+    .navSection li a {
+      color: #838383;
+      text-decoration: none; }
+      .navSection li a:hover {
+        text-decoration: underline; }
 
 .mainFooter {
   text-align: center;
