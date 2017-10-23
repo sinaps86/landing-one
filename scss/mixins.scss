@@ -1,0 +1,15 @@
+@import "variables";
+
+@mixin button{
+  background-color: $nav_bg_color;
+  color: $primary_font_light_color;
+  display: inline-block;
+  text-align: center;
+  padding: 1.4em 1.6em;
+  font-size: 0.9em;
+}
+
+@mixin active{
+  color: $secondaty_font_color;
+  background-color: $primary_accent_color;
+}

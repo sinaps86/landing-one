@@ -1,9 +1,73 @@
 @import "variables";
+@import "mixins";
 
 html {
   font-family: Arvo, sefif;
-  color: white;
+  color: $primary_font_color;
 }
 body {
-  background-color: #000000;
+  background-color: $main_bg_color;
+}
+
+.mainNav {
+  background-color: $nav_bg_color;
+  text-align: center;
+
+
+  ul {
+    margin-top: 0;
+    list-style: none;
+  }
+}
+
+.mainHeader {
+  background: $main_bg_color url("../img/img01.jpg") center center no-repeat;
+  color: $secondary_title_color;
+  text-align: center;
+
+  h1 {
+    font-size: 3.2em;
+    padding-top: 1em;
+    padding-bottom: 0;
+    margin-bottom: 0.2em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+    font-weight: normal;
+    padding-bottom: 1em;
+    padding-top:0;
+    margin-top: 0;
+  }
+}
+
+
+
+
+.mainFooter {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 6em;
+  font-size: 0.8em;
+
+  a {
+    color: $secondary_link_color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.button {
+  @include button;
+  &:hover {
+    background-color: $nav_bg_light_color;
+  }
+}
+
+.active {
+  @include active;
 }

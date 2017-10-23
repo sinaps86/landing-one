@@ -1,8 +1,56 @@
 html {
   font-family: Arvo, sefif;
-  color: white; }
+  color: #838383; }
 
 body {
-  background-color: #000000; }
+  background-color: #000; }
+
+.mainNav {
+  background-color: #212121;
+  text-align: center; }
+  .mainNav ul {
+    margin-top: 0;
+    list-style: none; }
+
+.mainHeader {
+  background: #000 url("../img/img01.jpg") center center no-repeat;
+  color: #fff;
+  text-align: center; }
+  .mainHeader h1 {
+    font-size: 3.2em;
+    padding-top: 1em;
+    padding-bottom: 0;
+    margin-bottom: 0.2em; }
+  .mainHeader h2 {
+    font-size: 1.1em;
+    font-weight: normal;
+    padding-bottom: 1em;
+    padding-top: 0;
+    margin-top: 0; }
+
+.mainFooter {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 6em;
+  font-size: 0.8em; }
+  .mainFooter a {
+    color: #576475;
+    text-decoration: none; }
+    .mainFooter a:hover {
+      text-decoration: underline; }
+
+.button {
+  background-color: #212121;
+  color: #adadad;
+  display: inline-block;
+  text-align: center;
+  padding: 1.4em 1.6em;
+  font-size: 0.9em; }
+  .button:hover {
+    background-color: #2e2e2e; }
+
+.active {
+  color: #fff;
+  background-color: #E42E33; }
 
 /*# sourceMappingURL=site.css.map */
